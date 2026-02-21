@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuks Kitchen - Order Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">Chuks Kitchen</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="order.html">My Orders</a></li>
+            <li><a href="">Account</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <!-- Order Summary Section -->
+    <div class="cart-page-bg">
+        <section class="order-summary">
+            <h1>Order Summary</h1>
+            <hr>
+            <h5>Add a Promo Code</h5>
+            <div class="order-content">
+                <div class="promo-code">
+                    <input title="promo-code" type="text" placeholder="Enter Code Here">
+                    <a href="#">Apply</a>
+                </div>
+                <div class="order-p">
+                    <p>Subtotal <span>₦9,200</span></p>
+                    <p>Delivery Fee <span>₦500</span></p>
+                    <p>Service Fee <span>₦200</span></p>
+                    <p>Tax <span>₦0</span></p>
+                    <hr>
+                    <h5>Total <span>₦9,900</span></h5>
+                </div>
+                <!-- Delivery or Pickup Toggle -->
+                <div class="toggle-container">
+                    <button class="toggle-btn active">Delivery</button>
+                    <button class="toggle-btn">Pick Up</button>
+                </div>
+
+                <!-- Special Instructions -->
+                <div class="special-instructions">
+                    <h5>Special Instructions for Restaurant</h5>
+                    <textarea
+                        placeholder="E.g no onion, food is too spicy, food is too hot hshshshshsh food is tasty"></textarea>
+                </div>
+
+                <!-- Proceed to Checkout -->
+                <a href="payment.html" class="checkout-btn">Proceed to Checkout</a>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-col1 ">
+            <h3 class="footer-logo">Chuks Kitchen</h3>
+            <p class="footer-col1-text">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>
+            <p>&copy; 2020 Dark Media. All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="order.html">My Order</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>+234 801 234 5678</p>
+            <p>hello@chukskitchen.com</p>
+            <p>123 Taste Blvd, Lagos, Nigeria</p>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
