@@ -7,6 +7,7 @@
   --pr-color: #ff7a18;
   --bg-color: #FFFFFF;
   --txt-color: #1F2937;
+  --border-color: #ACACAC;
 }
 *{
   box-sizing: border-box;
@@ -696,7 +697,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.order-summary hr{
+hr{
   border: none;
   border-top: 1px solid #e0e0e0;
 
@@ -820,6 +821,119 @@ body {
   margin-top: 20px;
 }
 
+/* Payment Section */
+.payment-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.payment-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Pay With Options */
+.pay-with h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.pay-options {
+  color: #ACACAC;
+  display: flex;
+  gap: 120px;
+  margin-bottom: 20px;
+}
+
+.pay-options .checked {
+  color: #0A0D13;
+}
+
+.pay-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Card Details */
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-details label {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color:#0A0D13;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.card-details input {
+  width: 100%;
+  padding: 12px 15px;
+  color: #ACACAC;
+  border: 1px solid #ACACAC;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.card-row {
+  display: flex;
+  gap: 15px;
+}
+
+.card-col {
+  flex: 1;
+}
+
+.card-details .save-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  flex-direction: row;
+  color: #ACACAC !important;
+}
+
+.save-card input {
+  width: auto;
+  margin: 0;
+}
+
+/* Pay Button */
+.pay-btn {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--pr-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Payment Note */
+.payment-note {
+  font-size: 12px;
+  color:var(--border-color);
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.6;
+}
 
 
 
