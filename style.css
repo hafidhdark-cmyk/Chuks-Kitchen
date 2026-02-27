@@ -694,7 +694,7 @@ body {
 /** Order Summary */
 
 .order-summary {
-  max-width: 700px;
+  max-width: 60%;
   margin: 0 auto;
   background-color: white;
   border-radius: 8px;
@@ -744,9 +744,9 @@ hr {
 /* Promo Code */
 .promo-code {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .promo-code input {
@@ -828,7 +828,7 @@ hr {
 
 /* Payment Section */
 .payment-section {
-  max-width: 600px;
+  max-width: 40%;
   margin: 40px auto;
   background-color: white;
   border-radius: 10px;
@@ -950,7 +950,14 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 20px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 10px;
   }
 
   .navbar .nav-logo {
@@ -979,28 +986,35 @@ html {
     align-items: center;
   }
 
+  .hero-over {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+  }
+
   .hero-text {
-    padding-left: 20px;
-    line-height: 40px;
+    padding-left: 0px;
+    line-height: 0px;
     letter-spacing: 0%;
   }
 
   .hero-text h1 {
     font-size: 32px;
-    width: 373;
-    height: 80;
-    opacity: 1;
+    width: 373px;
 
   }
 
   .hero-text p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 0px;
   }
 
-  .discover-btn {
+  .hero-text a {
     font-size: 13px;
-    padding: 10px 20px;
+    font-weight: 400;
+    padding: 15px 25px;
   }
 
   .search-container {
@@ -1018,14 +1032,9 @@ html {
   /* Login Page */
   .login-page {
     flex-direction: column;
-
   }
 
   .login-left {
-    display: none;
-  }
-
-  .footer{
     display: none;
   }
 
@@ -1033,16 +1042,18 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px 10px;
+    gap: 5px;
+    padding: 0px 10px;
   }
 
   .login-right .logo {
     text-align: center;
+    margin-bottom: 0px;
   }
 
   .login-right h3 {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   /* Explore Page */
@@ -1070,41 +1081,44 @@ html {
   }
   
   /* Cart Page */
-  .cart-item {
+  .cart-section {
+    font-size: 10px;
+  }
+
+  .cart-item{
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 30px;
   }
 
-  /* Order Summary */
+  /*Order Summary Page*/
   .order-summary {
-    margin: 15px;
-    padding: 20px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
   }
-
-  .cart-page-bg {
-    padding: 10px 0;
-    overflow-x: hidden;
-  }
-
-  .promo-code {
-    flex-direction: row;
+  
+  .promo-code{
+    display: flex;
   }
 
   .promo-code input {
-    width: 60%;
+    flex: 0.3;
+    padding: 10px;
   }
 
-  .toggle-container {
-    width: 100%;
+  .promo-code a {
+    font-size: 13px;
+    flex: 0.7;
+    padding: 10px 25px;
   }
 
-  .special-instructions textarea {
-    width: 100%;
+  /* Payment Page */
+  .payment-section {
+    margin: 5px auto;
+    max-width: 100%;
   }
 
-  .checkout-btn {
-    width: 100%;
+  .payment-section .pay-options {
+    gap: 6px;
   }
-
 }
