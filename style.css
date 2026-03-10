@@ -1,8 +1,7 @@
-/*
-    #000000
-    #C4C4C4
-    #F3F4F6
-    #FFE1C4*/
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --pr-color: #ff7a18;
   --bg-color: #FFFFFF;
@@ -16,17 +15,13 @@
 
 .hamburger {
   display: none;
-  ;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0 auto;
   background-color: #ffff;
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -34,8 +29,10 @@ body {
 /* Navbar */
 
 .navbar {
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -52,10 +49,10 @@ body {
 }
 
 .nav-links {
-  margin-left: 40px;
   list-style: none;
   display: flex;
-  gap: 120px;
+  gap: 50px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a {
@@ -81,6 +78,10 @@ body {
   padding: 10px 40px;
   margin-left: 400px;
   cursor: pointer;
+}
+
+.login-btn-mobile {
+  display: none;
 }
 
 /* Hero Section */
@@ -162,7 +163,7 @@ body {
   gap: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 12px 25px;
+  padding: 22px 25px;
   width: 70%;
 }
 
@@ -940,10 +941,6 @@ hr {
   line-height: 1.6;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 480px) {
   .navbar {
@@ -951,13 +948,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-  }
-
-  /* Footer */
-  .footer {
-    flex-direction: column;
-    padding: 10px 5px;
-    gap: 10px;
   }
 
   .navbar .nav-logo {
@@ -980,6 +970,76 @@ html {
     font-size: 40px;
   }
 
+  .navbar .nav-links.nav-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 35px;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    padding: 20px 15px;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    z-index: 999;
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-links.nav-open li {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links.nav-open li a {
+    display: block;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav-links.nav-open li a:hover {
+    background-color: #fff5eb;
+    color: var(--pr-color);
+  }
+
+  .login-btn-mobile {
+    background-color: var(--pr-color);
+    color: white !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 40px !important;
+    cursor: pointer;
+  }
+
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 10px;
+  }
+
   .hero {
     padding: 0px 20px;
     height: 700px;
@@ -987,7 +1047,7 @@ html {
   }
 
   .hero-over {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
   }
@@ -1079,13 +1139,13 @@ html {
   .menu-section {
     padding: 20px;
   }
-  
+
   /* Cart Page */
   .cart-section {
     font-size: 10px;
   }
 
-  .cart-item{
+  .cart-item {
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -1096,8 +1156,8 @@ html {
     max-width: 80%;
     padding: 10px;
   }
-  
-  .promo-code{
+
+  .promo-code {
     display: flex;
   }
 
