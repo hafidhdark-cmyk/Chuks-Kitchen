@@ -692,6 +692,22 @@ body {
   font-size: 14px;
 }
 
+.cart-page-bg .cart-section .cart-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart-page-bg .cart-section .cart-foot .cart-proceed {
+  background-color: var(--pr-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
 /** Order Summary */
 
 .order-summary {

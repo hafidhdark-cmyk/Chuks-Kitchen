@@ -69,7 +69,7 @@ The page includes a restaurant hero banner at the top, followed by category filt
 A two-column Flexbox layout — the left panel shows a food background image with an orange overlay, and the right panel contains the login form. On mobile, the left panel is hidden and the right panel takes full width, matching the Figma mobile design.
 
 ### Cart Page
-Cart items are displayed in a white card centered on a light grey background. Each item shows a food image, name, description, quantity controls, price, and a delete button.
+Cart items are displayed in a white card centered on a light grey background. Each item shows a food image, name, description, quantity controls, price, a delete button, and a proceed button(that leads to the Order Summary page).
 
 ### Order Summary Page (order.html)
 Displays a promo code input, itemized pricing breakdown (subtotal, delivery fee, service fee, tax, total), a delivery/pickup toggle, special instructions textarea, and a proceed to checkout button.
@@ -123,7 +123,7 @@ Key responsive changes include:
 | Home | index.html | Landing page with hero image and search bar |
 | Login | login.html | Login form with Google and Apple login options |
 | Explore | explore.html | Menu page with food categories and food cards |
-| Cart | cart.html | Cart items with quantity controls and delete button |
+| Cart | cart.html | Cart items with quantity controls, delete button and Proceed to Order Summary button |
 | Order Summary | order.html | Pricing breakdown, promo code, and checkout button |
 | Payment | payment.html | Card payment form with payment method options |
 
